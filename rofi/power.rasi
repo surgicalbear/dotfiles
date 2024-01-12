@@ -1,0 +1,50 @@
+configuration {
+  font: "JetBrainsMono Nerd Font Medium 50";
+}
+
+* {
+  bg: #282828;
+  bg-alt: #928374;
+  bg-selected: #3c3836;
+
+  fg: #a89984;
+  fg-alt: #a89984;
+  
+  border: 0;
+  margin:5;
+  padding: 5;
+  spacing: 5;
+}
+
+window {
+  width: 70%;
+  background-color: @bg;
+}
+
+element {
+  background-color: transparent;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg;
+  background-color: @bg-selected;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+    horizontal-align: 0.46;
+}
+
+
+listview {
+  background-color: @bg;
+  columns: 6;
+  lines: 1;
+}
+
+mainbox {
+  children: [listview];
+  background-color: @bg;
+}

@@ -10,5 +10,5 @@ require("blankline-config")
 require('mason-config')
 require('keybindings')
 require("format-config")
-vim.cmd('colorscheme everforest')
+vim.cmd('colorscheme rose-pine')
 

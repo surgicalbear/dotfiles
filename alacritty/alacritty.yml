@@ -5,7 +5,8 @@ window:
     x: 5
     y: 5
   decorations: None
-    #opacity: 0.9
+  dynamic_padding: false
+  opacity: 0.985
 shell:
   program: /bin/zsh
 scrolling:
@@ -33,6 +34,7 @@ colors:
     magenta: '0xd3869b'
     cyan:    '0x89b482'
     white:   '0xd4be98'
+
 font:
   family: JetBrainsMono Nerd Font
   style: Regular
