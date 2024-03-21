@@ -1,8 +1,8 @@
 configuration {
-  display-drun: "Applications:";
+  display-drun: "Applications";
   display-window: "Windows:";
   drun-display-format: "{name}";
-  font: "JetBrainsMono Nerd Font Medium 10";
+  font: "JetBrainsMono Nerd Font 11";
   modi: "window,run,drun";
   show-icons: true;
 }
@@ -10,11 +10,12 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #282828;
-  bg-alt: #928374;
-  bg-selected: #3c3836;
+  bg: #1e1e2e;
+  bg-alt: #1e1e2e;
+  bg-selected: #24273a;
 
-  fg-alt: #a89984;
+  fg-alt: #cdd6f4;
+  blue: #89b4fa;
 
   
   border: 0;
@@ -41,7 +42,7 @@ element selected {
 
 element-text {
   background-color: transparent;
-  text-color: inherit;
+  text-color: @fg-alt;
   vertical-align: 0.5;
 }
 
@@ -54,12 +55,13 @@ element-icon {
 entry {
   padding: 12;
   background-color: @bg-alt;
-  text-color: @fg;
+  text-color: @fg-alt;
 }
 
 inputbar {
   children: [prompt, entry];
   background-color: @bg;
+  text-color: @fg-alt;
 }
 
 listview {
@@ -76,6 +78,6 @@ mainbox {
 prompt {
   enabled: true;
   padding: 12 0 0 12;
-  background-color: @bg-alt;
-  text-color: @fg;
+  background-color: @blue;
+  text-color: @bg;
 }

@@ -75,6 +75,9 @@ local cmp = require'cmp'
     require'lspconfig'.pylsp.setup {
         capabilities = capabilities
     }
+    require'lspconfig'.jdtls.setup {
+        capabilities = capabilities 
+    }
 
 local lspconfig = require('lspconfig')
 local configs = require('lspconfig/configs')

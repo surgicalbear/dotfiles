@@ -64,7 +64,7 @@ bindsym $mod+Return exec alacritty
 exec_always --no-startup-id autotiling
 
 #feh wallppr
-exec_always feh --bg-fill ~/Pictures/blue.webp
+exec_always feh --bg-fill ~/Pictures/Mountain.jpg
 # remove the titlebar
 for_window [class="^.*"] border pixel 0
 for_window [class="krunner"] border pixel 0

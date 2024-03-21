@@ -3,13 +3,13 @@ configuration {
 }
 
 * {
-  bg: #282828;
-  bg-alt: #928374;
-  bg-selected: #3c3836;
+  bg: #1e1e2e;
+  bg-alt: #1e1e2e;
+  bg-selected: #24273a;
 
-  fg: #a89984;
-  fg-alt: #a89984;
-  
+  fg-alt: #cdd6f4;
+  blue: #89b4fa;
+ 
   border: 0;
   margin:5;
   padding: 5;
