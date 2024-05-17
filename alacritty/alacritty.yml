@@ -14,7 +14,8 @@ scrolling:
   multiplier: 3
 colors:
     primary:
-        background: "#1E1E2E" # base
+        #background: "#1E1E2E" # base
+        background: "#171717"
         foreground: "#CDD6F4" # text
         # Bright and dim foreground colors
         dim_foreground: "#CDD6F4" # text

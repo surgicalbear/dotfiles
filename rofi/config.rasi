@@ -10,9 +10,9 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #1e1e2e;
-  bg-alt: #1e1e2e;
-  bg-selected: #24273a;
+  bg: #171717;
+  bg-alt: #171717;
+  bg-selected: #9a9a9a;
 
   fg-alt: #cdd6f4;
   blue: #89b4fa;

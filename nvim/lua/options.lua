@@ -1,8 +1,9 @@
+vim.g.mapleader = " "
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.hidden = true
 vim.o.whichwrap = 'b,s,<,>,[,],h,l'
 vim.o.pumheight = 10
-vim.o.cmdheight = 1
+vim.o.cmdheight = 0
 vim.o.fileencoding = 'utf-8'
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -12,7 +13,7 @@ vim.o.backup = false
 vim.o.writebackup = false
 vim.o.updatetime = 300
 vim.o.timeoutlen = 100
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 vim.o.ignorecase = true
 vim.o.scrolloff = 3
 vim.o.sidescrolloff = 5
@@ -32,4 +33,10 @@ vim.o.expandtab = true
 vim.bo.expandtab = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.termguicolors = true
+vim.wo.relativenumber = true
+local map  = vim.api.nvim_set_keymap
+map('n', '<C-h>','<C-w>h', {noremap = true, silent = false})
+map('n', '<C-l>','<C-w>l', {noremap = true, silent = false})
+map('n', '<C-j>','<C-w>j', {noremap = true, silent = false})
+map('n', '<C-k>','<C-w>k', {noremap = true, silent = false})
 
