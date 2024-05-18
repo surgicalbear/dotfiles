@@ -6,7 +6,7 @@ window:
     y: 5
   decorations: None
   dynamic_padding: false
-  opacity: 0.985
+  opacity: 1
 shell:
   program: /bin/zsh
 scrolling:
