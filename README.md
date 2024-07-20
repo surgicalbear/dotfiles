@@ -1,3 +1,3 @@
 # Screenshots
 My Linux and Neovim enviroment
-![Screenshot](images/image.png)
+![Screenshot](images/updated.png)

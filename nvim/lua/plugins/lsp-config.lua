@@ -36,9 +36,9 @@ return {
       --lspconfig.pyright.setup({
         --capabilities = capabilities
       --}) 
-      --lspconfig.ruff_lsp.setup({
-        --capabilities = capabilities
-      --})
+      lspconfig.ruff_lsp.setup({
+        capabilities = capabilities
+      })
       lspconfig.terraformls.setup({
         capabilities = capabilities
       })
