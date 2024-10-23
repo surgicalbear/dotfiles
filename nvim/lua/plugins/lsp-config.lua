@@ -27,7 +27,7 @@ return {
             plugins = {
               pycodestyle = {
                 enabled = true,
-                ignore = {"W391", "E302", "E501"},
+                ignore = {"W391", "E302", "E501", "E741", "E225", "E226"},
               },
             },
           },
@@ -36,9 +36,9 @@ return {
       --lspconfig.pyright.setup({
         --capabilities = capabilities
       --}) 
-      lspconfig.ruff_lsp.setup({
-        capabilities = capabilities
-      })
+      --lspconfig.ruff_lsp.setup({
+        --capabilities = capabilities
+      --})
       lspconfig.terraformls.setup({
         capabilities = capabilities
       })
@@ -57,7 +57,12 @@ return {
       lspconfig.gopls.setup({
         capabilities = capabilities
       })
-
+       lspconfig.tsserver.setup({
+        capabilities = capabilities
+      })
+       lspconfig.eslint.setup({
+        capabilities = capabilities
+      })
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "V", vim.lsp.buf.code_action, {})

@@ -20,7 +20,10 @@ return {
                     },
                 },
             vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
-        }
+        },
+        git = {
+            ignore = false,
+      },
     }
   end,
 }
