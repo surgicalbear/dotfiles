@@ -33,21 +33,6 @@ return {
           },
         },
       })
-      --lspconfig.pyright.setup({
-        --capabilities = capabilities
-      --}) 
-      --lspconfig.ruff_lsp.setup({
-        --capabilities = capabilities
-      --})
-      lspconfig.terraformls.setup({
-        capabilities = capabilities
-      })
-      lspconfig.dockerls.setup({
-        capabilities = capabilities
-      })
-      lspconfig.yamlls.setup({
-        capabilities = capabilities
-      })
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
@@ -57,11 +42,15 @@ return {
       lspconfig.gopls.setup({
         capabilities = capabilities
       })
-       lspconfig.tsserver.setup({
+      lspconfig.ts_ls.setup({
         capabilities = capabilities
       })
-       lspconfig.eslint.setup({
+      lspconfig.eslint.setup({
         capabilities = capabilities
+      })
+      lspconfig.elixirls.setup({
+        capabilities = capabilities,
+        cmd = { "/home/surgical/.elixir-ls/release/language_server.sh" },
       })
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
